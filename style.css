@@ -10,7 +10,7 @@
     background-color: rgba(0, 0, 0, 0.7);
     max-width: 450px;
     padding: 30px 20px;
-    margin-top: 50px;
+    margin-top: 2%;
 }
 
 #thumbnail-margin {
@@ -18,10 +18,8 @@
     margin-bottom: 5%;
 }
 
-#for-m {
-    height: 60%;
-    width: 50%;
-}
+
+/*footer*/
 
 .footer {
     padding: 10px 0px 0px 1px;
