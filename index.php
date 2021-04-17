@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -14,26 +14,14 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!--navbar opening-->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Online Sale</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
-                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
-                    <li><a href="aboutus.html"><span class="glyphicon glyphicon-list"></span>About Us</a></li>
-                    <li><a href="contactus.html"><span class="glyphicon glyphicon-phone"></span>Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php
+    require ("nav.php");
+    ?>
     <!--navbar closing-->
     <!-- content of image-->
     <div id="background-image">
@@ -51,7 +39,7 @@
             <div class="col-sm-4">
                 <a href="#">
                     <div class="thumbnail">
-                        <img src="../img/B.jpg" alt="natue">
+                        <img src="img/B.jpg" alt="natue">
                         <div class="caption">
                             <h3>Cameras</h3>
                             <p>Choose among the best available in the world.</p>
@@ -63,7 +51,7 @@
             <div class="col-sm-4">
                 <a href="#">
                     <div class="thumbnail">
-                        <img src="../img/B.jpg" alt="techno">
+                        <img src="img/B.jpg" alt="techno">
                         <div class="caption">
                             <h3>Watches</h3>
                             <p>Original watches from the best brands.</p>
@@ -75,7 +63,7 @@
             <div class="col-sm-4">
                 <a href="#">
                     <div class="thumbnail">
-                        <img src="../img/C.jpg" alt="logy">
+                        <img src="img/C.jpg" alt="logy">
                         <div class="caption">
                             <h3>Shirts</h3>
                             <p>Our exquisite collection of shirts.</p>
@@ -121,5 +109,4 @@
 
 
 </body>
-
 </html>

@@ -13,25 +13,13 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--navbar opening-->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Online Sale</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
-                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
-                    <li><a href="aboutus.html"><span class="glyphicon glyphicon-list"></span>About Us</a></li>
-                    <li><a href="contactus.html"><span class="glyphicon glyphicon-phone"></span>Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php
+    require ("nav.php");
+    ?>
     <!--navbar closing-->
     <!-- form opening-->
     <div class="container-fluid decor_bg">

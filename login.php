@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,26 +15,13 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
+<body> 
     <!--navbar opening-->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Online Sale</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
-                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
-                    <li><a href="aboutus.html"><span class="glyphicon glyphicon-list"></span>About Us</a></li>
-                    <li><a href="contactus.html"><span class="glyphicon glyphicon-phone"></span>Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php
+    require ("nav.php");
+    ?>
     <!--navbar closing-->
     <!-- form opening-->
     <div class="container-fluid decor_bg">
@@ -41,14 +29,14 @@
             <div class="container">
                 <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
                     <h2>Login</h2>
-                    <form>
+                    <form method="get" action="login_script.php">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" name="emailcheck" class="form-control" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input type="password" name="passwordcheck" class="form-control" placeholder="Password">
                         </div>
-                        <p>Don't have an account?<a href="signup.html"> Sign up</a></p>
+                        <p>Don't have an account?<a href="signup.php"> Sign up</a></p>
                         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
