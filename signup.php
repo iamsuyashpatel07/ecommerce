@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +15,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
     <!--navbar opening-->
     <nav class="navbar navbar-default">
@@ -40,15 +38,26 @@
         <div class="row">
             <div class="container">
                 <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
-                    <h2>Login</h2>
-                    <form>
+                    <h2>SIGN UP</h2>
+                    <form method="get" action="signup_script.php">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input class="form-control" name="name" placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input type="email" class="form-control" name="email" placeholder="Email">
                         </div>
-                        <p>Don't have an account?<a href="signup.html"> Sign up</a></p>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="contact" placeholder="Contact">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="city" placeholder="City">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="address" placeholder="Address">
+                        </div>
                         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>

@@ -26,7 +26,7 @@
                     <li><a href="index.html">Online Sale</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                     <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
                     <li><a href="aboutus.html"><span class="glyphicon glyphicon-list"></span>About Us</a></li>
                     <li><a href="contactus.html"><span class="glyphicon glyphicon-phone"></span>Contact Us</a></li>
@@ -40,26 +40,15 @@
         <div class="row">
             <div class="container">
                 <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
-                    <h2>SIGN UP</h2>
+                    <h2>Login</h2>
                     <form>
-                        <div class="form-group">
-                            <input class="form-control" placeholder="Name">
-                        </div>
                         <div class="form-group">
                             <input type="email" class="form-control" placeholder="Email">
                         </div>
                         <div class="form-group">
                             <input type="password" class="form-control" placeholder="Password">
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Contact">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="City">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Address">
-                        </div>
+                        <p>Don't have an account?<a href="signup.html"> Sign up</a></p>
                         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
