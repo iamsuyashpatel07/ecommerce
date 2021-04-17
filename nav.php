@@ -8,18 +8,18 @@
                 <?php
                 if (isset($_SESSION['email'])) {
                     ?>
-                    <li><a href = "signup.php"><span class = "glyphicon glyphicon-user"></span>Cart</a></li>
-                    <li><a href = "login.php"><span class = "glyphicon glyphicon-user"></span>Settings</a></li>
-                    <li><a href = "logout.php"><span class = "glyphicon glyphicon-log-in"></span>Logout</a></li>
-                    <li><a href = "contactus.php"><span class = "glyphicon glyphicon-log-in"></span>Contact Us</a></li>
+                    <li><a href = "signup.php"><span class = "glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                    <li><a href = "login.php"><span class = "glyphicon glyphicon-cog"></span >Settings</a></li>
+                    <li><a href = "logout.php"><span class = "glyphicon glyphicon-off"></span> Logout</a></li>
+                    <li><a href = "contactus.php"><span class = "glyphicon glyphicon-phone"></span> Contact Us</a></li>
                     ?>
                     <?php
                 } else {
                     ?>
-                   <li><a href = "signup.php"><span class = "glyphicon glyphicon-user"></span>Sign Up</a></li>
-                    <li><a href = "login.php"><span class = "glyphicon glyphicon-user"></span>Login</a></li>
-                    <li><a href = "aboutus.php"><span class = "glyphicon glyphicon-log-in"></span>About Us</a></li>
-                    <li><a href = "contactus.php"><span class = "glyphicon glyphicon-log-in"></span>Contact Us</a></li>
+                   <li><a href = "signup.php"><span class = "glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href = "login.php"><span class = "glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href = "aboutus.php"><span class = "glyphicon glyphicon-list"></span> About Us</a></li>
+                    <li><a href = "contactus.php"><span class = "glyphicon glyphicon-phone"></span> Contact Us</a></li>
                         <?php
                     }
                     ?>
