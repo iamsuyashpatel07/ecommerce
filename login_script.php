@@ -11,9 +11,6 @@ if ($num == 0) {
   echo "<script>window.location.assign('login.php'); </script>";
 } 
 else {  
-  $row = mysqli_fetch_array($result);
-  $_SESSION['email']=$email;
-  $_SESSION['id']=mysqli_insert_id($con);
   echo "<script> window.location.assign('index.php'); </script>";
 }
 ?>
