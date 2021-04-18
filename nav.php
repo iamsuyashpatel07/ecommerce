@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <div class="navbar navbar-default">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -6,8 +9,8 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                   <?php if (isset($_SESSION['email'])) :?>
-                    <li><a href = "cart.php"><span class = "glyphicon glyphicon-shopping-cart"></span> Cart</a></li>;
-                    <li><a href = "setting.php"><span class = "glyphicon glyphicon-cog"></span >Settings</a></li>
+                    <li><a href = "cart.php"><span class = "glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                    <li><a href = "settings.php"><span class = "glyphicon glyphicon-cog"></span >Settings</a></li>
                     <li><a href = "logout.php"><span class = "glyphicon glyphicon-off"></span> Logout</a></li>
                     <li><a href = "contactus.php"><span class = "glyphicon glyphicon-phone"></span> Contact Us</a></li>
                 <?php else : ?>

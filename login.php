@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +23,8 @@
     ?>
     <!--navbar closing-->
     <!-- form opening-->
+    <?php
+    if (!isset($_SESSION['email'])):  ?>
     <div class="container-fluid decor_bg">
         <div class="row">
             <div class="container">
@@ -43,6 +44,9 @@
             </div>
         </div>
     </div>
+    <?php else: ?>
+    <center><b>FIRST Logout</b></center>
+    <?php endif; ?>
     <!-- form closing-->
     <!-- footer opening-->
     <footer>

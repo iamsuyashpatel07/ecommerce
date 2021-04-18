@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,6 +23,7 @@
     ?>
     <!--navbar closing-->
     <!-- content of image-->
+    <?php if (!isset($_SESSION['email'])) :?>
     <div id="background-image">
         <center>
             <div id="content">
@@ -73,6 +73,128 @@
             </div>
         </div>
     </div>
+    <?php else : ?>
+    <!-- first row-->
+    <div class="container" id="thumbnail-margin">
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="img/B.jpg" alt="natue">
+                        <div class="caption">
+                            <h3>Cameras</h3>
+                            <p>Choose among the best available in the world.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-4">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="img/B.jpg" alt="techno">
+                        <div class="caption">
+                            <h3>Watches</h3>
+                            <p>Original watches from the best brands.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-4">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="img/C.jpg" alt="logy">
+                        <div class="caption">
+                            <h3>Shirts</h3>
+                            <p>Our exquisite collection of shirts.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 2nd row -->
+    <div class="container" id="thumbnail-margin">
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="img/B.jpg" alt="natue">
+                        <div class="caption">
+                            <h3>Cameras</h3>
+                            <p>Choose among the best available in the world.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-4">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="img/B.jpg" alt="techno">
+                        <div class="caption">
+                            <h3>Watches</h3>
+                            <p>Original watches from the best brands.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-4">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="img/C.jpg" alt="logy">
+                        <div class="caption">
+                            <h3>Shirts</h3>
+                            <p>Our exquisite collection of shirts.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--3 row-->
+    <div class="container" id="thumbnail-margin">
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="img/B.jpg" alt="natue">
+                        <div class="caption">
+                            <h3>Cameras</h3>
+                            <p>Choose among the best available in the world.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-4">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="img/B.jpg" alt="techno">
+                        <div class="caption">
+                            <h3>Watches</h3>
+                            <p>Original watches from the best brands.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-4">
+                <a href="#">
+                    <div class="thumbnail">
+                        <img src="img/C.jpg" alt="logy">
+                        <div class="caption">
+                            <h3>Shirts</h3>
+                            <p>Our exquisite collection of shirts.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+        <?php endif; ?>
     <!--thumbnail closing-->
     <!-- footer opening-->
     <footer>
