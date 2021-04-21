@@ -3,10 +3,11 @@ require ("connection.php");
 $password=$_GET["oldcheck"];
 $new=$_GET["newcheck"];
 $check=$_GET["check"];
-$id=$_SESSION['id'];
+$email= $_SESSION['email'];
+
 if($new==$check)
 {
-    $update_posts = "UPDATE signup SET passsword='".$new."' WHERE signup.id='".$id."'";  
+    $update_posts = "UPDATE `signup` SET `password` = '$new' WHERE `signup`.`email` ='$email';";  
     $run_update = mysqli_query($con,$update_posts);
     session_unset();
     session_destroy(); 
