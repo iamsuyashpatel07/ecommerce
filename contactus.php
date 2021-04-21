@@ -29,16 +29,16 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aspernatur, </br>br sequi et expedita ullam culpa obcaecati quisquam facilis assumenda exercitationem</br> cupiditate. Minima ducimus animi odit saepe quae quidem molestiae.
             </p>
-            <form style="padding-top: 5% ;">
+            <form style="padding-top: 5% ;" method="get" action="contactus_script.php">
                 <h1>Contact Us</h1>
                 <div class="form-group">
-                    <input type="name" class="form-control" id="exampleInputname1" placeholder="name">
+                    <input type="name" name="name" class="form-control" id="exampleInputname1" placeholder="name">
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" rows="3" placeholder="Message..."></textarea>
+                    <textarea name="message" class="form-control" rows="3" placeholder="Message..."></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

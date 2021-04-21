@@ -30,13 +30,13 @@
                      <h2>Settings</h2>
                      <form method="get" action="settings_script.php">
                          <div class="form-group">
-                             <input type="password" name="passwordcheck" class="form-control" placeholder="Old Password">
+                             <input type="password" name="oldcheck" class="form-control" placeholder="Old Password">
                          </div>
                          <div class="form-group">
-                             <input type="password" name="passwordcheck" class="form-control" placeholder="New Password">
+                             <input type="password" name="newcheck" class="form-control" placeholder="New Password">
                          </div>
                          <div class="form-group">
-                             <input type="password" name="passwordcheck" class="form-control" placeholder="Retype new Password">
+                             <input type="password" name="check" class="form-control" placeholder="Retype new Password">
                          </div>
                          <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                      </form>
