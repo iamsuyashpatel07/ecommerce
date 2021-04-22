@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 21, 2021 at 04:51 PM
+-- Generation Time: Apr 22, 2021 at 05:28 PM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.3.24
 
@@ -38,7 +38,33 @@ CREATE TABLE `contact_us` (
 --
 
 INSERT INTO `contact_us` (`name`, `email`, `message`) VALUES
-('patelcode_123', 'sumrj@gmail.com', 'gcvvvvvvvvgx');
+('patelcode_123', 'sumrj@gmail.com', 'gcvvvvvvvvgx'),
+('rexqw', 'rexqw@gmail.com', 'hello,how can i get your number');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products`
+--
+
+CREATE TABLE `products` (
+  `products_id` int(11) NOT NULL,
+  `name` varchar(60) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `price` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`products_id`, `name`, `email`, `price`) VALUES
+(1, 'hello', 'hdgfgvvx@gmail.com', 300),
+(1, 'earphone', 'junior@yahoo.com', 900),
+(1, 'earphone', 'junior@yahoo.com', 900),
+(1, 'earphone', 'rocky@gmail.com', 900),
+(1, 'earphone', 'yashrajpatel@gmail.com', 900),
+(1, 'earphone', 'yashrajpatel@gmail.com', 900);
 
 -- --------------------------------------------------------
 
@@ -61,11 +87,23 @@ CREATE TABLE `signup` (
 --
 
 INSERT INTO `signup` (`id`, `name`, `email`, `password`, `contact`, `city`, `address`) VALUES
-(1, 'ram@gmail.com', 'ram@gmail.com', 'ram@gmail.com', 2147483647, 'Gorakhpur', '429f,Azad Nagar, Gorakhpur-273016, Uttar Pradesh,India');
+(1, 'ram@gmail.com', 'ram@gmail.com', 'hellog7', 2147483647, 'Gorakhpur', '429f,Azad Nagar, Gorakhpur-273016, Uttar Pradesh,India'),
+(2, 'hee@gmail.com', 'hee@gmail.com', 'hello007', 2147483647, 'Gorakhpur', '429f,Azad Nagar, Gorakhpur-273016, Uttar Pradesh,India'),
+(3, 'junior@yahoo.com', 'junior@yahoo.com', 'junior@yahoo.co', 2147483647, 'Gorakhpur', '429f,Azad Nagar, Gorakhpur-273016, Uttar Pradesh,India'),
+(4, 'hi@gmail.com', 'hi@gmail.com', 'hi@gmail.com', 2147483647, 'Gorakhpur', '429f,Azad Nagar, Gorakhpur-273016, Uttar Pradesh,India'),
+(5, 'rex@gmail.com', 'rex@gmail.com', 'rex@gmail.com', 2147483647, 'Gorakhpur', '429f,Azad Nagar, Gorakhpur-273016, Uttar Pradesh,India'),
+(6, 'rocky@gmail.com', 'rocky@gmail.com', 'rocky@gmail.com', 2147483647, 'Gorakhpur', '429f,Azad Nagar, Gorakhpur-273016, Uttar Pradesh,India'),
+(7, 'YASHRAJ PATEL', 'yashrajpatel@gmail.com', 'yashrajpatel@gmail.com', 2147483647, 'Gorakhpur', '429f,Azad Nagar, Gorakhpur-273016, Uttar Pradesh,India');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+  ADD KEY `hello` (`products_id`);
 
 --
 -- Indexes for table `signup`
@@ -78,10 +116,16 @@ ALTER TABLE `signup`
 --
 
 --
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `products_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `signup`
 --
 ALTER TABLE `signup`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

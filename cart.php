@@ -22,11 +22,25 @@
     ?>
     <!--navbar closing-->
     <?php
-    if (isset($_SESSION['email'])):
-        echo "this is cart page";
+    if (isset($_SESSION['email'])){
+    $con=mysqli_connect("localhost","root","","onlinesale") or die(mysqli_error($con));
+    $email=$_SESSION['email'];
+    $select_query="SELECT name,price FROM products WHERE email='" . $email . "';";
+    $select_query_result=mysqli_query($con,$select_query)or die(mysqli_error($con));
     ?>
-    <?php else : 
-    echo "<script> window.location.assign('login.php'); </script>";
-    endif; ?>
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12" style="float: left;"><h4>Product</h4></div>
+            <div class="col-lg-12" style="float: right;"><h4>Price</h4></div>
+         </div>
+        <?php $total=0; while($row=mysqli_fetch_array($select_query_result)){ ?>
+            <div class="row">
+             <div class="col-lg-12" style="float: left;"><h4><?php echo $row['name'];?></h4></div>
+             <div class="col-lg-12" style="float: right;"><h4><?php $total+=$row['price']; echo $row['price'];?></h4></div>
+           </div>
+           <?php } echo "TOTAL PRICE '$total'";} ?>
+       </div>
+    <?php if(!isset($_SESSION['email']))
+    echo "<script> window.location.assign('login.php'); </script>"; ?>
     </body>
 </html>
