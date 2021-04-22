@@ -1,3 +1,4 @@
+To understand just checkout snaps folder
 # ecoomerce
 e-commerce website trying to make
 
